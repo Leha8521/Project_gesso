@@ -25,7 +25,7 @@
 
 .bold() {
 	font-family: 'ProximaNova_bold', sans-serif;
-	
+
 }
 .reg() {
 	font-family: 'ProximaNova_Reg', sans-serif;
@@ -78,9 +78,18 @@ section {
 }
 
 .section-header {
-	margin: 2rem 0 10rem;
+	h2 {
 	font-size: 3rem;
 	.bold();
+	}
+	&-light {
+		color: @light;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+	margin: 2rem 0 10rem;
+	
 	text-align: center;
 }
 
@@ -252,6 +261,78 @@ section {
 	background-size: 70%;
 }
 
+/* Оформление модального окна */
+.price {
+	background: @icons-color url(../img/Green-Background-07-1024x681.jpg) center no-repeat;
+	background-size: cover;
+	
+	&-header-btn {
+		margin-top: 2.5rem;
+		}
+	&-button {
+		text-align: right;
+	}
+	/* Карточка с тарифами */
+	&-block {
+		padding: 1rem 3rem;
+		min-height: 50rem;
+		background-color: @light;
+		box-shadow: 7px 12px 21px 0px rgba(0,0,0,0.17);
+		text-align: center;
+		img {
+			display: inline-block;
+			width: 100%;
+			max-width: 30rem;
+			margin-bottom: 2rem;
+		}
+	}
+	&-tag {
+		display: block;
+		margin-bottom: 1rem;
+		font-size: 1.9rem;
+		strong {
+			.bold();
+		}
+	}
+	h4 {
+		margin: 2rem 0;
+		font-size: 1.7rem;
+		.bold();
+	}
+	 &-list {
+			padding: 0;
+			font-size: 1.3rem;
+			min-height: 12rem;
+			text-align: center;
+			line-height: 1.9rem;
+			li {
+				 list-style: none;
+				&:before {
+					content: '';
+					display: inline-block;
+					margin-right: 0.8rem;
+					width: 1.4rem;
+					height: 1.4rem;
+					background: url(../img/checked_Images/checked_ImgID1.png) no-repeat center;
+					background-size: 100%;
+					vertical-align: middle;
+				}
+			}
+		} 
+/* 	&-owerlo-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+} */
+}
+
+
 /* Оформление модальных окон */
 .popup {
 	display: none;
@@ -316,6 +397,25 @@ section {
  	.main {
  		 background-position: top right; 
  	}
+ 	.price {
+ 		padding-top: 5rem;
+ 		&-button {
+ 			text-align: center;
+ 			padding: 2rem 0;
+ 		}
+ 		&-header-btn {
+ 			margin-top: 0;
+ 			margin-bottom: 2rem;
+ 		}
+ 		&-block {
+ 			margin-top: 2rem;
+ 		}
+
+ 	}
+ 	.section-header-light {
+ 		margin-bottom: 0;
+ 	}
+
  } 
  @media (max-width: 767px) {
  	.main {
