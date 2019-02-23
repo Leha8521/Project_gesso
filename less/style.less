@@ -342,10 +342,46 @@ section {
 	&-next-btn {
 		right: -3rem;
 	}
+	&-text {
+		position: relative;
+		margin-top: 2rem;
+		padding: 1rem;
+		border: 2px solid @icons-color;
+		font-style: italic;
+		&::before {
+			content: '';
+			position: absolute;
+			top: -2rem;
+			left: 4rem;
+			height: 2rem;
+			width: 2rem;
+			background-color: @light;
+			border: 2px solid @icons-color;
+			border-bottom: none;
+			border-top-right-radius: 100px;
+		}
+
+	}
 	&-slider {
 		background-color: @light;
 		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
 		padding: 5rem 6rem;
+		p {
+			font-size: 1.6rem;
+		}
+		.media {
+			margin-top: 3rem;
+			font-size: 1.4rem;
+			
+			h4 {
+				.bold();
+			}
+			img {
+				height: 7rem;
+				width: 7rem;
+				/* object-fit: cover */
+			}
+		}
 		&-btn {
 			position: absolute;
 			top: 50%;
