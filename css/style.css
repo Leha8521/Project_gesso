@@ -44,6 +44,41 @@ textarea:focus {
   cursor: pointer;
   background-color: #e3a103;
 }
+/* Оформление формы */
+.form {
+  /*Поля для ввода*/
+  /*Подписи к полям*/
+  /*Кнопка отправить*/
+}
+.form-input {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+.form label {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  /* border: 1px solid red; */
+}
+.form-btn {
+  border: none;
+  background-color: #fcb303;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /* Typography */
 section {
   padding: 10rem 0;
@@ -111,9 +146,6 @@ section {
   padding: 4rem 5rem;
   text-align: center;
   /*Заголовок формы*/
-  /*Поля для ввода*/
-  /*Подписи к полям*/
-  /*Кнопка отправить*/
 }
 .main-form-header {
   font-size: 1.6rem;
@@ -121,35 +153,6 @@ section {
 }
 .main-form-header strong {
   font-size: 2rem;
-}
-.main-form-input {
-  display: block;
-  width: 100%;
-  margin: 2rem 0;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  padding: 1.2rem;
-}
-.main-form label {
-  display: inline-block;
-  background-color: #ffffff;
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  /* border: 1px solid red; */
-}
-.main-form-btn {
-  border: none;
-  background-color: #fcb303;
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 .main-form small {
   display: block;

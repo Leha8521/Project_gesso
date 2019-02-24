@@ -69,6 +69,41 @@ button, input, a, textarea {
 		background-color: darken(@btn-color, 5%);
 	}
 }
+
+/* Оформление формы */
+.form {
+	/*Поля для ввода*/
+		&-input {
+			display: block;
+			width: 100%;
+			margin: 2rem 0;
+			border: 1px solid @border-input;
+			border-radius: 5px;
+			padding: 1.2rem;
+		}
+		/*Подписи к полям*/
+		label {
+			display: inline-block;
+			background-color: @light;
+			padding: 0.5rem;
+			font-size: 1.3rem;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			/* border: 1px solid red; */
+		}
+		/*Кнопка отправить*/
+		&-btn {
+			border: none;
+			background-color: @btn-color;
+			width: 100%;
+			padding: 1.5rem;
+			border-radius: 1rem;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			color: @light;
+		}
+}
 /* Typography */
 section {
 	padding: 10rem 0;
@@ -147,37 +182,7 @@ section {
 				font-size: 2rem;
 			}
 		}
-		/*Поля для ввода*/
-		&-input {
-			display: block;
-			width: 100%;
-			margin: 2rem 0;
-			border: 1px solid @border-input;
-			border-radius: 5px;
-			padding: 1.2rem;
-		}
-		/*Подписи к полям*/
-		label {
-			display: inline-block;
-			background-color: @light;
-			padding: 0.5rem;
-			font-size: 1.3rem;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			/* border: 1px solid red; */
-		}
-		/*Кнопка отправить*/
-		&-btn {
-			border: none;
-			background-color: @btn-color;
-			width: 100%;
-			padding: 1.5rem;
-			border-radius: 1rem;
-			font-size: 1.6rem;
-			text-transform: uppercase;
-			color: @light;
-		}
+		
 		small {
 			display: block;
 			padding: 0.8rem;
