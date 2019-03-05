@@ -303,10 +303,14 @@ section {
   background-size: 100%;
   vertical-align: middle;
 }
-/* Оформление сеции отзовы */
+/* Оформление сеrции отзовы */
 .feedback {
+  position: relative;
   background: url(../img/feedBack/feedback_bg.jpg) no-repeat center;
   background-size: cover;
+}
+.feedback .section-header {
+  margin-bottom: 7rem;
 }
 .feedback-prev-btn {
   left: -3rem;
@@ -352,7 +356,8 @@ section {
 .feedback-slider .media img {
   height: 7rem;
   width: 7rem;
-  /* object-fit: cover */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .feedback-slider-btn {
   position: absolute;
@@ -366,6 +371,29 @@ section {
 }
 .feedback-slider-btn img {
   width: 50%;
+}
+.feedback .main-form {
+  margin-top: 10rem;
+}
+.feedback .hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 25%;
+}
+.feedback-form {
+  margin-top: 3rem;
+}
+.feedback-form h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+.feedback-form label {
+  -webkit-transform: translateX(-50%) translateY(16%);
+          transform: translateX(-50%) translateY(16%);
+}
+.feedback-form button {
+  max-width: 30rem;
 }
 /* Оформление модальных окон */
 .popup {
@@ -411,6 +439,9 @@ section {
   .header-btn {
     font-size: 1.2rem;
   }
+  .fedback-form {
+    padding: 2rem 5rem;
+  }
 }
 @media (max-width: 991px) {
   .header-btn {
@@ -446,10 +477,23 @@ section {
   .section-header-light {
     margin-bottom: 0;
   }
+  .fotorama {
+    margin-bottom: 2rem;
+  }
+  .feedback-form label {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hand {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main {
     background-position: top left;
+  }
+  .main h1 {
+    font-size: 2.5rem;
   }
   .header {
     text-align: center;
@@ -466,6 +510,12 @@ section {
   }
   .main-title {
     margin-top: 10rem;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
   }
 }
 @media (max-width: 451px) {

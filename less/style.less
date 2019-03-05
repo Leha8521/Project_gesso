@@ -337,10 +337,14 @@ section {
 } */
 }
 
-/* Оформление сеции отзовы */
+/* Оформление сеrции отзовы */
 .feedback {
+	position: relative;
 	background: url(../img/feedBack/feedback_bg.jpg) no-repeat center;
 	background-size: cover;
+	.section-header {
+		margin-bottom: 7rem;
+	}
 	&-prev-btn {
 		left: -3rem;
 	}
@@ -384,7 +388,7 @@ section {
 			img {
 				height: 7rem;
 				width: 7rem;
-				/* object-fit: cover */
+				object-fit: cover
 			}
 		}
 		&-btn {
@@ -400,8 +404,36 @@ section {
 			}
 		}
 	}
+.main-form {
+	margin-top: 10rem;
+}
+.hand {
+	position: absolute;
+	
+	bottom: 0;
+	left: 0;
+	max-width: 25%;
+}
+
+// Оформление формы
+&-form {
+	margin-top: 3rem;
+	h3 {
+		.bold();
+		font-size: 2rem;
+	}
+	label {
+		transform: translateX(-50%) translateY(16%);
+	}
+	button {
+		max-width: 30rem;
+	}
+}
 
 }
+
+
+
 
 /* Оформление модальных окон */
 .popup {
@@ -443,10 +475,19 @@ section {
 	}
 }
 
+
+
+
 /* media */
 @media (max-width: 1199px) {
  	.header-btn {
  		font-size: 1.2rem;
+ 	}
+ 	.fedback {
+ 		&-form {
+ 			padding: 2rem 5rem;
+ 		}
+ 		
  	}
  } 
 
@@ -485,11 +526,31 @@ section {
  	.section-header-light {
  		margin-bottom: 0;
  	}
+ 	
+	.fotorama {
+		margin-bottom: 2rem;
+	}
+
+	.feedback {
+		&-form {
+			label {
+				transform: translate(-50%, -50%);
+			}
+		}
+
+	}
+	.hand {
+		display: none;
+	}
+ 	
 
  } 
  @media (max-width: 767px) {
  	.main {
  		background-position: top left;
+ 		h1 {
+ 			font-size: 2.5rem;
+ 		}
  	}
  	.header {
  		text-align: center;
@@ -505,7 +566,17 @@ section {
    .main-title {
    	margin-top: 10rem;
    }
+   .feedback {
+   	&-prev-btn {
+		left: 0;
+	}
+	&-next-btn {
+		right: 0;
+	}
+   }
  }
+
+
  @media (max-width: 451px) {
  	.main-form-header {
  		font-size: 1.3rem;
