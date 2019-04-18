@@ -381,6 +381,56 @@ section {
 .feedback-form button {
   max-width: 30rem;
 }
+/* Схема работы */
+.scheme {
+  background: #fff url('../img/scheme/bg.png') bottom -10rem right -10rem no-repeat;
+  background-size: 60rem;
+  padding-bottom: 0;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+/* Блок все на 100% */
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.all-inclusive .media {
+  min-height: 9rem;
+}
+.all-inclusive .media h4 {
+  font-size: 1.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.all-inclusive .media p {
+  font-size: 1.1rem;
+}
+.circle {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: #46b814;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #46b814;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.9rem;
+  color: #f5f5f5;
+}
+/*Мыразвеем все опасения*/
+.problems-list ul {
+  padding: 2rem;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -499,9 +549,19 @@ section {
   .feedback-next-btn {
     right: 0;
   }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 30rem;
+  }
 }
 @media (max-width: 451px) {
   .main-form-header {
     font-size: 1.3rem;
+  }
+  .section-header {
+    text-align: center;
   }
 }
