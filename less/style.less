@@ -484,11 +484,75 @@ section {
 
 /*Мыразвеем все опасения*/
 .problems {
+	position: relative;
+	&-woman {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 30rem;
+		margin-left: -19rem;
+	}
 	&-list {
-
-		ul {
-			padding: 2rem;
+		border: 2px solid #1a1820;
+		padding: 2rem;
+		min-height: 32rem;
+		h4 {
+			color: @problem-color;
+			font-size: 2.1rem;
+			.bold();
 		}
+		ul {
+			list-style: none;
+			padding: 2rem;
+			padding-left: 0;
+			
+			li {
+				margin-bottom: 3rem;
+				position: relative;
+				padding-left: 3.5rem;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 3rem;
+					height: 3rem;
+					
+				}
+			}
+			
+		}
+
+		&_bad {
+			border-color:  #dcd7d6;
+			padding-bottom: 0;
+			li:last-child {
+				margin-bottom: 0;
+				
+			}
+			ul li:before {
+				background: url(../img/problem/bad.svg) center no-repeat;
+				background-size: 70%;
+			}
+			
+			h4 {
+			opacity: 0.5;
+			}
+			
+		}
+		&_good {
+			padding-bottom: 0;
+			border-color: @icons-color;
+			li:last-child {
+				margin-bottom: 0;
+				
+			}
+			ul li:before {
+				background: url(../img/problem/good.svg) center no-repeat;
+			}
+		}
+	
 	}
 } 
 
@@ -545,7 +609,10 @@ section {
  			padding: 2rem 5rem;
  		}
  		
- 	}
+	 }
+	 .problems-list {
+		 min-height: 40rem;
+	 }
  } 
 
  @media (max-width: 991px) {
@@ -577,7 +644,8 @@ section {
  		}
  		&-block {
  			margin-top: 2rem;
- 		}
+		 }
+	
 
  	}
  	.section-header-light {
@@ -598,6 +666,13 @@ section {
 	}
 	.hand {
 		display: none;
+	}
+	.problems-woman {
+		display: none;
+	}
+	.problems-list {
+		min-height: 30rem;
+		margin-bottom: 3rem;
 	}
  	
 
