@@ -556,6 +556,30 @@ section {
 	}
 } 
 
+/*Материалы*/
+.materials {
+	background: url(../img/materials/bg.jpg) center no-repeat;
+	background-size: cover;
+	&-slider {
+		margin-top: 5rem;
+	}
+	&-link {
+		color: @icons-color;
+		border-bottom: 1px dotted @icons-color;
+		&:hover {
+			color: darken(@icons-color, 10%);
+	}
+
+	}
+	&-footer {
+		margin: 4rem;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+} 
+
 /* Оформление модальных окон */
 .popup {
 	display: none;
