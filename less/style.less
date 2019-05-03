@@ -580,6 +580,78 @@ section {
 	}
 } 
 
+.tour {
+	background: url(../img/tour/bg.jpg) center no-repeat;
+	background-size: cover;
+	&-subtitle {
+		font-size: 2.2rem;
+	}
+}
+
+.upsell {
+	background: #286b0a;
+	color: @light;
+	&-block {
+		img {
+			display: inline-block;
+			width: 100%;
+			max-width: 33rem;
+			
+		}
+		text-align: center;
+		min-height: 25rem;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		p {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+/* Контакты */
+.contacts {
+	background: url(../img/contacts/bg.jpg) no-repeat center bottom;
+	background-size: cover;
+	h2 {
+		.bold();
+	}
+	p {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	&-links {
+		display: inline-block;
+		color: @text-color;
+		border-bottom: 1px dotted @text-color;
+		&:hover {
+			color: darkcyan(@text-color, 10%);
+		}
+	}
+	&-form-header {
+		font-size: 1.9rem;
+	}
+
+}
+
+/*Оформление footer*/
+footer {
+	padding: 2rem 0;
+
+} 
+.footer {
+
+	&-contacts {
+		text-align: center;
+		p {
+			margin: 0;
+		}
+	}
+	&-dev {
+		right: 0;
+		text-align: right;
+	}
+}
+
 /* Оформление модальных окон */
 .popup {
 	display: none;
@@ -619,6 +691,7 @@ section {
 		.bold();
 	}
 }
+
 
 
 
@@ -698,7 +771,12 @@ section {
 		min-height: 30rem;
 		margin-bottom: 3rem;
 	}
- 	
+	.tour {
+		background: none;
+		background-color: @bg-light;
+	}
+	 
+	// 
 
  } 
  @media (max-width: 767px) {
